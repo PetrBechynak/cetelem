@@ -1,0 +1,1417 @@
+
+**** Error file opened at 20160203 170037 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Wed Feb 03 17:00:37,147]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:55)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+Error:  >Wed Feb 03 17:00:42,473<    RfcException:
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=iepmsg SYSNR=02 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'iepmsg' unknown
+TIME        Wed Feb 03 17:00:42 2016
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'iepmsg' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    return code: RFC_FAILURE (1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160203 194602 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Wed Feb 03 19:46:02,748]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:58)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+Error:  >Wed Feb 03 19:46:04,025<    RfcException:
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=iepmsg SYSNR=02 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.1.16.190:3302' not reached
+TIME        Wed Feb 03 19:46:04 2016
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3285
+DETAIL      NiPConnect2: 10.1.16.190:3302
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    return code: RFC_FAILURE (1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160203 204648 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Wed Feb 03 20:46:48,478]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:58)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+Error:  >Wed Feb 03 20:46:49,705<    RfcException:
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=iepmsg.mall.local SYSNR=02 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.1.16.190:3302' not reached
+TIME        Wed Feb 03 20:46:49 2016
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3285
+DETAIL      NiPConnect2: 10.1.16.190:3302
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    return code: RFC_FAILURE (1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160204 094033 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 09:40:33,504]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:58)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+Error:  >Thu Feb 04 09:40:35,011<    RfcException:
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=iepmsg.mall.local SYSNR=02 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.1.16.190:3302' not reached
+TIME        Thu Feb 04 09:40:35 2016
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3285
+DETAIL      NiPConnect2: 10.1.16.190:3302
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    return code: RFC_FAILURE (1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160204 094116 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 09:41:16,178]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:58)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+Error:  >Thu Feb 04 09:41:17,483<    RfcException:
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=iepmsg SYSNR=02 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.1.16.190:3302' not reached
+TIME        Thu Feb 04 09:41:17 2016
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3285
+DETAIL      NiPConnect2: 10.1.16.190:3302
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    return code: RFC_FAILURE (1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160204 121537 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 12:15:37,213]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:58)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+Error:  >Thu Feb 04 12:15:38,330<    RfcException:
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=ietmsg SYSNR=02 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.1.16.181:3302' not reached
+TIME        Thu Feb 04 12:15:38 2016
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3285
+DETAIL      NiPConnect2: 10.1.16.181:3302
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    return code: RFC_FAILURE (1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160204 121616 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 12:16:16,660]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:58)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 125332 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 12:53:32,007]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:58)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 18 more
+
+
+**** Error file opened at 20160204 125454 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 12:54:54,485]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 132506 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 13:25:06,677]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 132630 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 13:26:30,435]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 134126 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 13:41:26,042]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 18 more
+
+
+**** Error file opened at 20160204 134227 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 13:42:27,048]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 18 more
+
+
+**** Error file opened at 20160204 154549 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 15:45:49,896]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 154840 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 15:48:40,019]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 155013 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 15:50:13,331]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 155118 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 15:51:18,127]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 160100 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 16:01:00,784]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 161255 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 16:12:55,520]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 161324 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 16:13:24,788]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 161341 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 16:13:41,000]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 161546 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 16:15:46,470]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160204 162134 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Thu Feb 04 16:21:34,937]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.StepByStepClient.step1Connect(StepByStepClient.java:59)
+	at com.nrholding.backend.connectors.StepByStepClient.main(StepByStepClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160205 135021 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Fri Feb 05 13:50:21,489]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160205 135229 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Fri Feb 05 13:52:29,255]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160205 135321 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Fri Feb 05 13:53:21,979]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160205 135415 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Fri Feb 05 13:54:15,745]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160205 150232 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Fri Feb 05 15:02:32,981]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160205 150452 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Fri Feb 05 15:04:52,404]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160205 184306 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Fri Feb 05 18:43:06,006]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+Error:  >Fri Feb 05 18:43:11,377<    RfcException:
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=cz-dc-v-391 SYSNR=02 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'cz-dc-v-391' unknown
+TIME        Fri Feb 05 18:43:11 2016
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'cz-dc-v-391' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    return code: RFC_FAILURE (1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160206 183809 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Sat Feb 06 18:38:09,966]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160207 220629 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Sun Feb 07 22:06:29,321]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+Error:  >Sun Feb 07 22:06:34,504<    RfcException:
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=cz-dc-v-391 SYSNR=02 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'cz-dc-v-391' unknown
+TIME        Sun Feb 07 22:06:34 2016
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'cz-dc-v-391' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    return code: RFC_FAILURE (1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160208 105414 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Mon Feb 08 10:54:14,830]:Class initialization failed: 
+java.lang.NoClassDefFoundError: com/sap/tc/logging/Location
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: com.sap.tc.logging.Location
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160210 213353 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Wed Feb 10 21:33:53,182]:Class initialization failed: 
+java.lang.NoClassDefFoundError: org/apache/log4j/Priority
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.Priority
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160210 213859 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Wed Feb 10 21:38:59,426]:Class initialization failed: 
+java.lang.NoClassDefFoundError: org/apache/log4j/Priority
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.Priority
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160210 214131 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Wed Feb 10 21:41:31,718]:Class initialization failed: 
+java.lang.NoClassDefFoundError: org/apache/log4j/Priority
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.Priority
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160210 214229 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error thrown [Wed Feb 10 21:42:29,565]:Class initialization failed: 
+java.lang.NoClassDefFoundError: org/apache/log4j/Priority
+	at com.sap.i18n.cp.ConvertBase.<clinit>(ConvertBase.java:28)
+	at com.sap.i18n.cp.ConvertXToCFactory.getShortcut(ConvertXToCFactory.java:164)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:56)
+	at com.sap.i18n.cp.ConvertXToCFactory.createConvertXToC(ConvertXToCFactory.java:32)
+	at com.sap.conn.jco.util.I18NConverters.getConvertXToC(I18NConverters.java:39)
+	at com.sap.conn.rfc.driver.CpicDriver.<clinit>(CpicDriver.java:818)
+	at com.sap.conn.rfc.engine.DefaultRfcRuntime.getVersion(DefaultRfcRuntime.java:39)
+	at com.sap.conn.rfc.api.RfcApi.RfcGetVersion(RfcApi.java:244)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc.<clinit>(MiddlewareJavaRfc.java:216)
+	at com.sap.conn.jco.rt.DefaultJCoRuntime.initialize(DefaultJCoRuntime.java:79)
+	at com.sap.conn.jco.rt.JCoRuntimeFactory.<clinit>(JCoRuntimeFactory.java:23)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sap.conn.jco.JCo.createJCo(JCo.java:60)
+	at com.sap.conn.jco.JCo.<clinit>(JCo.java:33)
+	at com.sap.conn.jco.JCoDestinationManager.getDestination(JCoDestinationManager.java:56)
+	at com.nrholding.backend.connectors.SapClient.step1Connect(SapClient.java:59)
+	at com.nrholding.backend.connectors.SapClient.main(SapClient.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.Priority
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 23 more
+
+
+**** Error file opened at 20160210 214426 Central European Time Rel 3.1.0 Embedded (2014-01-09) [721.217]
+Error:  >Wed Feb 10 21:44:26,660<    >RfcGetException rc (7) message: Name or password is incorrect (repeat logon)
+<RfcGetException
+

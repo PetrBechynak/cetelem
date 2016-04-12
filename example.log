@@ -1,0 +1,21 @@
+DEBUG main CetelemLoan - Cetelem Loan started...
+DEBUG main WaitingOrdersStack - Sap Z_WEB_PL_CETELEM data loaded: 453 records
+DEBUG main WaitingOrdersStack - 0 records has missing BSTKD, proceeding with 453
+DEBUG pool-1-thread-1 WaitingOrdersProcessor - Running thread pool-1-thread-1
+DEBUG pool-1-thread-2 WaitingOrdersProcessor - Running thread pool-1-thread-2
+DEBUG pool-1-thread-4 WaitingOrdersProcessor - Running thread pool-1-thread-4
+DEBUG pool-1-thread-5 WaitingOrdersProcessor - Running thread pool-1-thread-5
+DEBUG pool-1-thread-3 WaitingOrdersProcessor - Running thread pool-1-thread-3
+DEBUG pool-1-thread-3 WaitingOrdersProcessor - Thread pool-1-thread-3 - Order nr.8005596287 is still being approved and was skipped.
+WARN pool-1-thread-3 WaitingOrdersProcessor - Thread pool-1-thread-3 - Order nr.8005774140 was approved, but SAP refused to unblock it. Skipped.
+DEBUG pool-1-thread-1 WaitingOrdersProcessor - Thread pool-1-thread-1 - Order nr.1 has 'OTHER' status and was skipped.
+DEBUG pool-1-thread-1 WaitingOrdersProcessor - Thread pool-1-thread-1 - Order nr.8005931862 has 'OTHER' status and was skipped.
+DEBUG pool-1-thread-1 WaitingOrdersProcessor - Thread pool-1-thread-1 - Order nr.8006039480 is still being approved and was skipped.
+WARN pool-1-thread-1 WaitingOrdersProcessor - Thread pool-1-thread-1 - Order nr.8007088215 received unknown order status: "blebleble"
+WARN pool-1-thread-4 WaitingOrdersProcessor - Thread pool-1-thread-4 - Order nr.8003269632 was approved, but SAP refused to unblock it. Skipped.
+DEBUG pool-1-thread-1 WaitingOrdersProcessor - Thread pool-1-thread-1 - Order nr.8007096343 is still being approved and was skipped.
+WARN pool-1-thread-5 WaitingOrdersProcessor - Thread pool-1-thread-5 - Order nr.8005581369 was approved, but SAP refused to unblock it. Skipped.
+DEBUG pool-1-thread-5 WaitingOrdersProcessor - Thread pool-1-thread-5 - Order nr.8007122574 is still being approved and was skipped.
+DEBUG pool-1-thread-5 WaitingOrdersProcessor - Thread pool-1-thread-5 - Order nr.8007128345 has 'OTHER' status and was skipped.
+DEBUG pool-1-thread-5 WaitingOrdersProcessor - Thread pool-1-thread-5 - Order nr.8007134555 is still being approved and was skipped.
+DEBUG pool-1-thread-2 WaitingOrdersProcessor - Thread pool-1-thread-2 - Order nr.123456788 has 'OTHER' status and was skipped.

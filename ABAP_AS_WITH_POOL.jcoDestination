@@ -1,0 +1,11 @@
+#for tests only !
+#Fri Feb 19 22:28:53 CET 2016
+jco.destination.pool_capacity=3
+jco.client.lang=en
+jco.client.ashost=cz-dc-v-391
+jco.client.user=WEB
+jco.destination.peak_limit=10
+jco.client.sysnr=02
+jco.client.passwd=dgls44HX1
+jco.client.client=001
+jco.client.codepage=4110
